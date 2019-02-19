@@ -1,3 +1,0 @@
-# testts
-
-> test info
