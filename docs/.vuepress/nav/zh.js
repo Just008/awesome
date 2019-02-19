@@ -31,16 +31,16 @@ const backend = {
     {
       text: 'SQL',
       items: [
-        { text: 'Mysql', link: '/zh/miscellaneous/migration-guide.html' },
-        { text: 'Redis', link: '/zh/faq/' }
+        { text: 'Mysql', link: '/backend/sql/mysql/' },
+        { text: 'Redis', link: '/backend/sql/redis/' }
       ]
     },
     {
       text: '其他',
       items: [
-        { text: 'Git', link: '/zh/miscellaneous/migration-guide.html' },
-        { text: 'Vim', link: '/zh/miscellaneous/migration-guide.html' },
-        { text: 'Markdown', link: '/zh/faq/' }
+        { text: 'Git', link: '/backend/other/git.html' },
+        { text: 'Vim', link: '/backend/other/vim.html' },
+        { text: 'Markdown', link: '/backend/other/markdown.html' }
       ]
     }
   ]
@@ -61,8 +61,6 @@ const linux = {
       items: [
         { text: 'AB 测试工具', link: '/linux/ab.html' },
         { text: 'Supervisor', link: '/linux/supervisor.html' },
-        { text: '部署', link: '/zh/miscellaneous/migration-guide.html' },
-        { text: '分布式', link: '/zh/faq/' }
       ]
     }
   ]

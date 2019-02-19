@@ -4,10 +4,14 @@ const fs = require('fs')
 
 const sidebarMap = require('./sidebarMap.js')
 
+
+// 自动的加载所有的 md 文件和路径
+// TODO: 二级区分
 exports.inferSiderbars = () => {
   const sidebar = {}
   sidebarMap.forEach(({ title, dirname }) => {
     const dirpath = path.resolve(__dirname, '../' + dirname)
+    console.log(dirpath)
     const parent = `/${dirname}/`
     const children = fs
       .readdirSync(dirpath)
@@ -17,7 +21,6 @@ exports.inferSiderbars = () => {
       )
       .sort((prev, next) => (next.includes('README.md') ? 1 : 0))
       .map(item => item.replace(/(README)?(.md)$/, ''))
-
     sidebar[parent] = [
       {
         title,
