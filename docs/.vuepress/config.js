@@ -22,6 +22,7 @@ module.exports = {
     docsDir: 'docs',
     editLinkText: '在 GitHub 上编辑此页',
     sidebarDepth: 3
+  
   },
   configureWebpack: {
     resolve: {
