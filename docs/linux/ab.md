@@ -115,3 +115,19 @@ Percentage of the requests served within a certain time (ms)
   99%    326
  100%    326 (longest request)
 ```
+
+测试结果中关注以下内容：
+- Server Software：被测试Web服务器的软件名称。
+- Server Hostname：请求URL中的主机名称。
+- Server Port：被测试Web服务器的侦听端口。
+- Document Path：请求的URL的绝对路径。
+- Document Length:HTTP响应数据的正文长度。
+- Concurrency Level：并发用户数，设置的“c”参数。
+- Time taken for tests：所有请求处理完成所花费的总时间。
+- Complete requests：总请求数，设置的“n”参数。
+- Failed requests：失败的请求数。
+- Total transferred: 所有请求的响应数据长度总和。
+- HTML transferred：所有请求的响应数据中正文数据的总和。也就是减去Total transferred中HTTP响应数据中头信息的长度。
+- Request spersecond：Web服务器的吞吐率，等于Completerequests/Time taken for tests。
+- Time per request：用户平均请求等待时间，等于Time taken for tests/(Complete requests/Concurrency Level)。
+- Transfer rate:这些请求在单位时间内从服务器取得的数据长度,等于Total transferred / Time taken for tests。

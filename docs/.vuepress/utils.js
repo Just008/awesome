@@ -11,7 +11,6 @@ exports.inferSiderbars = () => {
   const sidebar = {}
   sidebarMap.forEach(({ title, dirname }) => {
     const dirpath = path.resolve(__dirname, '../' + dirname)
-    console.log(dirpath)
     const parent = `/${dirname}/`
     const children = fs
       .readdirSync(dirpath)
