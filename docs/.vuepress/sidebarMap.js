@@ -1,5 +1,6 @@
 const sidebarMap = [
   { title: "指南", dirname: "guide" },
+  { title: "ES6 学习", dirname: "web/es6" },
   { title: "Laravel 总结", dirname: "backend/php/laravel" },
   { title: "Swoole 学习", dirname: "backend/php/swoole" },
   { title: "设计模式总结", dirname: "backend/php/design-pattern" },

@@ -39,7 +39,6 @@ const backend = {
       text: '其他',
       items: [
         { text: 'Git', link: '/backend/other/git.html' },
-        { text: 'Vim', link: '/backend/other/vim.html' },
         { text: 'Markdown', link: '/backend/other/markdown.html' }
       ]
     }
@@ -54,13 +53,14 @@ const linux = {
       items: [
         { text: 'Docker', link: '/linux/docker/' },
         { text: 'Nginx', link: '/linux/nginx/' },
+        { text: 'Vim', link: '/backend/linux/vim.html' },
+        { text: 'Supervisor', link: '/linux/supervisor.html' },
       ]
     },
     {
       text: '运维方向',
       items: [
         { text: 'AB 测试工具', link: '/linux/ab.html' },
-        { text: 'Supervisor', link: '/linux/supervisor.html' },
       ]
     }
   ]
