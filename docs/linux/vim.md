@@ -1,4 +1,4 @@
-# VIM 学习总结
+# VIM 总结
 
 ![](https://study.laragh.top/other/_media/vim.png)
 

@@ -55,12 +55,19 @@ const linux = {
         { text: 'Nginx', link: '/linux/nginx/' },
         { text: 'Vim', link: '/backend/linux/vim.html' },
         { text: 'Supervisor', link: '/linux/supervisor.html' },
+        { text: 'Supervisor', link: '/linux/supervisor.html' },
+        { text: 'Screen', link: '/linux/screen.html' },
+        { text: 'Bash 命令', link: '/linux/bs.html' },
       ]
     },
     {
       text: '运维方向',
       items: [
+        { text: 'LNMP 搭建', link: '/linux/lnmp.html' },
         { text: 'AB 测试工具', link: '/linux/ab.html' },
+        { text: 'Deployer', link: '/linux/deployer-auto.html' },
+        { text: 'Sentry 部署', link: '/linux/sentry-auto.html' },
+        { text: 'Sentry 异常提醒', link: '/linux/sentry-auto-notice-error.html' },
       ]
     }
   ]
