@@ -6,6 +6,7 @@ const web = {
       items: [
         { text: 'ES6', link: '/web/es6/' },
         { text: 'Vue', link: '/web/vue/' },
+        { text: 'Vue', link: '/web/vue-book/' },
       ]
     },
     {
