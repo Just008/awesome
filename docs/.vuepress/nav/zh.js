@@ -53,8 +53,7 @@ const linux = {
       items: [
         { text: 'Docker', link: '/linux/docker/' },
         { text: 'Nginx', link: '/linux/nginx/' },
-        { text: 'Vim', link: '/backend/linux/vim.html' },
-        { text: 'Supervisor', link: '/linux/supervisor.html' },
+        { text: 'Vim', link: '/linux/vim.html' },
         { text: 'Supervisor', link: '/linux/supervisor.html' },
         { text: 'Screen', link: '/linux/screen.html' },
         { text: 'Bash 命令', link: '/linux/bs.html' },

@@ -10,16 +10,6 @@ const sidebarMap = [
   { title: "其他", dirname: "other" },
 ]
 
-const guide = [
-  { title: "指南", dirname: "guide" },
-]
-
-const web = [
-  { title: "ES6 学习", dirname: "web/es6" },
-  { title: "基础知识", dirname: "web/es6/base" },
-  { title: "ES6 学习", dirname: "web/es6" },
-  { title: "ES6 学习", dirname: "web/es6" },
-]
 
 
 
