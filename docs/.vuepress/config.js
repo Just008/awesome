@@ -2,7 +2,7 @@ const utils = require('./utils')
 
 module.exports = {
   title: 'Awesome',
-  description: '个人学习总结',
+  description: '多少殷勤全白付，当年戏语误青丝。',
   base: '/awesome/',
   head: [
     [
