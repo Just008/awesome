@@ -2,16 +2,32 @@
 
 在 Nginx 的配置时会有很多问题需要解决。这里就列出常见的问题
 
-## 一级域名强制跳转二级域名
+## 重定向配置
+
+1. 一级域名强制跳转二级域名
 
 最常见的例子是在访问 `xxx.com` 时，你想让它强制跳转 `www.xxx.com`
 
-## http 强制跳转 https
+```bash
+server {
+  listen 80;
+  server_name xxx.com;
+  # 我在这里
+  if ($http_host ~ "^***.com$") {
+    rewrite  ^(.*)    http://www.***.com$1 permanent;
+  }
+  ...
+}
+
+```
+
+2. http 强制跳转 https
 
 ```bash
 server {
   listen 80;
   server_name xxx.xxx.com;
+  # 我在这里
   rewrite ^(.*)$  https://$host$1 permanent;
   ...
 }

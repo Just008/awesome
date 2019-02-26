@@ -40,7 +40,7 @@ const backend = {
       text: '其他',
       items: [
         { text: 'Git', link: '/backend/other/git.html' },
-        { text: 'Markdown', link: '/backend/other/markdown.html' }
+        { text: 'Markdown', link: '/backend/other/markdown.html' },
       ]
     }
   ]
