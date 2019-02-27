@@ -6,12 +6,12 @@ const sidebarMap = [
   { title: "Typescript 总结", dirname: "web/typescript" },
   { title: "Laravel 总结", dirname: "backend/php/laravel" },
   { title: "Swoole 学习", dirname: "backend/php/swoole" },
+  { title: "Nginx 学习", dirname: "backend/php/nginx" },
   { title: "设计模式总结", dirname: "backend/php/design-pattern" },
   { title: "其他知识", dirname: "backend/other" },
   { title: "Mysql 学习", dirname: "backend/sql/mysql" },
   { title: "Redis 学习", dirname: "backend/sql/redis" },
   { title: "Docker 学习", dirname: "linux/docker" },
-  { title: "Nginx 学习", dirname: "linux/nginx" },
   { title: "Linux 学习总结", dirname: "linux" },
   { title: "其他", dirname: "other" },
 ]

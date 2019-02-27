@@ -26,7 +26,8 @@ const backend = {
       items: [
         { text: 'Laravel', link: '/backend/php/laravel/' },
         { text: 'Swoole', link: '/backend/php/swoole/' },
-        { text: '设计模式', link: '/backend/php/design-pattern/' }
+        { text: '设计模式', link: '/backend/php/design-pattern/' },
+        { text: 'Nginx', link: '/backend/php/nginx/' }
       ]
     },
     {
@@ -53,7 +54,6 @@ const linux = {
       text: '基础知识',
       items: [
         { text: 'Docker', link: '/linux/docker/' },
-        { text: 'Nginx', link: '/linux/nginx/' },
         { text: 'Vim', link: '/linux/vim.html' },
         { text: 'Supervisor', link: '/linux/supervisor.html' },
         { text: 'Screen', link: '/linux/screen.html' },

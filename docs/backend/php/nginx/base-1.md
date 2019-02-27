@@ -105,6 +105,7 @@ http {
   # 引入不同的配置文件的方式来解决多个站点配置分开的功能
   include /etc/nginx/conf.d/*.conf;
 	include /etc/nginx/sites-enabled/*;
+
 }
 
 mail {
@@ -142,6 +143,7 @@ server {
     }
 }
 ```
+
 当用户访问 `http://example.org` 时会执行：
 
 - 读取 `/data/www/index.html`，如果读取不到就会转发到 `fastcgi_pass` 里面的逻辑。
