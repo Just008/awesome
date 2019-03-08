@@ -4,7 +4,7 @@
 
 正向代理的作用有很多，例如，能访问本无法访问的，加速，cache，隐藏访问者的行踪等，具体的不再详述了 [工作中真的不常用]
 
-![正向代理图解](http://md.laragh.top/vuepress/nginx/nginx-redirect.png)
+![正向代理图解](http://md.laragh.top/vuepress/nginx/nginx-redirect-1.png)
 
 反向代理和正向代理相反，用户访问反向代理服务器，感觉就是这个服务器提供的服务。用户并不能感知代理服务器的存在。
 
@@ -45,5 +45,15 @@ server {
 因为网站的存在，不仅仅是静态展示的，还要处理一些动态请求，例如表单等。所以还要与一些动态语言[PHP 、Python 等]结合使用
 
 ```bash
-
+location ~ \.php$ {
+  fastcgi_pass   127.0.0.1:9000;
+  #fastcgi_pass /run/php/php7.1-fpm.sock;
+  fastcgi_index  index.php;
+  fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+  include        fastcgi_params;
+}
 ```
+
+## Webscoket
+
+

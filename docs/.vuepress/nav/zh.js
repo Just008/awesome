@@ -42,6 +42,7 @@ const backend = {
       items: [
         { text: 'Git', link: '/backend/other/git.html' },
         { text: 'Markdown', link: '/backend/other/markdown.html' },
+        { text: '面试宝典', link: '/backend/interview/' },
       ]
     }
   ]

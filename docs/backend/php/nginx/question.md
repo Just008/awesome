@@ -24,12 +24,20 @@ server {
 2. http 强制跳转 https
 
 ```bash
+# 由于 Nginx 不推荐过多的判断，所以在配置时还是把这两类分开比较好
 server {
   listen 80;
   server_name xxx.xxx.com;
   # 我在这里
-  rewrite ^(.*)$  https://$host$1 permanent;
+  return 301 https://$server_name$request_uri;
   ...
+}
+
+server {
+    listen 443 ssl;
+    server_name  xxx.xxx.com;
+
+    ...
 }
 ```
 

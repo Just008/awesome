@@ -13,6 +13,7 @@ const sidebarMap = [
   { title: "Redis 学习", dirname: "backend/sql/redis" },
   { title: "Docker 学习", dirname: "linux/docker" },
   { title: "Linux 学习总结", dirname: "linux" },
+  { title: "面试宝典", dirname: "backend/interview" },
   { title: "其他", dirname: "other" },
 ]
 
