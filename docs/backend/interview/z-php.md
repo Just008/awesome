@@ -20,6 +20,12 @@
 
 ### `cgi`、`fastcgi`、`php-fpm`
 
+
+
+### fastcgi 和 php-fpm 的关系
+
+参考地址： [fastcgi 和 php-fpm 的关系](https://segmentfault.com/q/1010000000256516)
+
 ## 常写的手写题
 
 ### 冒泡排序

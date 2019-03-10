@@ -85,7 +85,10 @@ HTTP请求报文由3部分组成：请求行+请求头+请求体
 
 ### 三次握手和四次挥手
 
-参看地址：[通俗大白话来理解TCP协议的三次握手和四次分手](https://github.com/jawil/blog/issues/14)
+参看地址：
+[通俗大白话来理解TCP协议的三次握手和四次分手](https://github.com/jawil/blog/issues/14)
+
+[滴滴工程师图文并茂带你深入理解 TCP 握手分手全过程](https://mp.weixin.qq.com/s/n0--UphB4SCFOU3k0cTyRw)
 
 1. 三次握手
 
