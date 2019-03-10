@@ -73,7 +73,7 @@
 
 1、联合索引遵循前缀原则
 
-```mysql
+```bash
 KEY(a,b,c)
 WHERE a = 1 AND b = 2 AND c = 3
 WHERE a = 1 AND b = 2

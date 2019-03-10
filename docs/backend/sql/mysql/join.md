@@ -8,7 +8,7 @@
 
 创建两个表： user_info, user_account
 
-```mysql
+```bash
 create table user_info (`userid` int not null, `name` varchar(20) not null);
 
 insert user_info values(1001, 'A'), (1002, 'B'), (1003, 'C'), (1004, 'D') , (1005, 'E'), (1006, 'F'), (1007, 'G'), (1008, 'H');
@@ -21,8 +21,7 @@ insert user_account values(1001, 20), (1002, 8), (1003, 11), (1009, 13);
 
 现在要获取 userid 为 1003 的 `name` 和 `money`
 
-
-```mysql
+```bash
 SELECT i.userid as id, i.name, a.money
     FROM user_info as i
     LEFT JOIN user_account as a
