@@ -128,7 +128,6 @@ SHOW VARIABLES -- 显示系统变量信息
 
 ## 数据操作
 
-
 ```bash
 -- 增
     INSERT [INTO] 表名 [(字段列表)] VALUES (值列表)[, (值列表), ...]

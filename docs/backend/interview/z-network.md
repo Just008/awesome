@@ -46,41 +46,41 @@ HTTP请求报文由3部分组成：请求行+请求头+请求体
 1. 请求头
 
 | 字段                               | 说明                                          | 示例                                                         |
-| ------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| Accept              | 客户端能接收的**MIME**数据类型                               | Accept: text/plain, text/html                                |
-| Accept-Charset      | 客户端采用的编码在格式                                       | Accept-Charset: iso-8859-5                                   |
-| Accept-Encoding     | 客户端支持的数据压缩格式                                     | Accept-Encoding: compress, gzip                              |
-| Accept-Language     | 客户端采用的语言环境                                         | Accept-Language: en,zh                                       |
-| Authorization       | HTTP授权的授权证书                                           | Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==            |
-| Connection          | 请求完成后是保持链接Keep-Alive，还是关闭链接close            | Connection: close                                            |
-| Content-Length      | 请求的内容长度                                               | Content-Length: 348                                          |
-| Cookie              | 客户端可以向服务器带数据                                     | Cookie: $Version=1; Skin=new;                                |
-| From                | 发出请求的用户的Email                                        | From: user@email.com |
-| Host                | 客户端想连接的目标主机和端口号                               | Host: http://www.hao123.com:8080 |
-| Referer             | 客户端是从哪个资源来访问服务器的（一般用来防盗链）           | Referer: http://www.hao123.com/archives/test.html |
-| If-Modified-Since   | 资源的缓存时间                                               | If-Modified-Since: Sat, 29 Oct 2010 19:43:31 GMT             |
-| Pragma              | 实现特定的指令，它可应用到响应链上的任何接收方               | Pragma: no-cache                                             |
-| Refresh             | 服务端要求客户端多长时间刷新一次                             | Refresh: 5; url=http://www.hao123.com/archives/test.html |
-| User-Agent          | 客户端的版本                                                 | User-Agent: Mozilla/5.0 (Linux; X11)                         |
-| UA-Pixels           | 屏幕大小                                                     |                                                              |
-| UA-Color            | 颜色深度                                                     |                                                              |
-| UA-OS               | 操作系统类型                                                 |                                                              |
-| UA-CPU              | CPU类型                                                      |                                                              |
-| Accept-Ranges       | 可以请求网页实体的一个或者多个子范围字段                     | Accept-Ranges: bytes                                         |
-| Cache-Control       | 指定请求和响应遵循的缓存机制                                 | Cache-Control: no-cache                                      |
-| Content-Type        | 请求的与实体对应的MIME信息                                   | Content-Type: application/x-www-form-urlencoded              |
-| Range               | 客户端只请求实体的一部分，指定范围                           | Range: bytes=500-999                                         |
-| Date                | 客户端当前请求服务器的时间                                   | Date: Tue, 15 Nov 2010 08:12:31 GMT                          |
-| If-Match            | 只有请求内容与实体相匹配才有效                               | If-Match: “737060cd8c284d8af7ad3082f209582d”                 |
-| If-None-Match       | 如果内容未改变返回304代码，参数为服务器先前发送的Etag，与服务器回应的Etag比较判断是否改变 | If-None-Match: “737060cd8c284d8af7ad3082f209582d”            |
-| If-Range            | 如果实体未改变，服务器发送客户端丢失的部分，否则发送整个实体。参数也为Etag | If-Range: “737060cd8c284d8af7ad3082f209582d”                 |
-| If-Unmodified-Since | 只在实体在指定时间之后未被修改才请求成功                     | If-Unmodified-Since: Sat, 29 Oct 2010 19:43:31 GMT           |
-| Max-Forwards        | 限制信息通过代理和网关传送的时间                             | Max-Forwards: 10                                             |
-| Proxy-Authorization | 连接到代理的授权证书                                         | Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==      |
-| TE                  | 客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息     | TE: trailers,deflate;q=0.5                                   |
-| Upgrade             | 向服务器指定某种传输协议以便服务器进行转换（如果支持）       | Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11               |
-| Via                 | 通知中间网关或代理服务器地址，通信协议                       | Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)                  |
-| Warning             | 关于消息实体的警告信息                                       | Warn: 199 Miscellaneous warning                              |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| Accept                   | 客户端能接收的**MIME**数据类型                               | Accept: text/plain, text/html                                |
+| Accept-Charset           | 客户端采用的编码在格式                                       | Accept-Charset: iso-8859-5                                   |
+| Accept-Encoding          | 客户端支持的数据压缩格式                                     | Accept-Encoding: compress, gzip                              |
+| Accept-Language          | 客户端采用的语言环境                                         | Accept-Language: en,zh                                       |
+| Authorization            | HTTP授权的授权证书                                           | Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==            |
+| Connection               | 请求完成后是保持链接Keep-Alive，还是关闭链接close            | Connection: close                                            |
+| Content-Length           | 请求的内容长度                                               | Content-Length: 348                                          |
+| Cookie                   | 客户端可以向服务器带数据                                     | Cookie: $Version=1; Skin=new;                                |
+| From                     | 发出请求的用户的Email                                        | From: user@email.com |
+| Host                     | 客户端想连接的目标主机和端口号                               | Host: http://www.hao123.com:8080 |
+| Referer                  | 客户端是从哪个资源来访问服务器的（一般用来防盗链）           | Referer: http://www.hao123.com/archives/test.html |
+| If-Modified-Since         | 资源的缓存时间                                               | If-Modified-Since: Sat, 29 Oct 2010 19:43:31 GMT             |
+| Pragma                   | 实现特定的指令，它可应用到响应链上的任何接收方               | Pragma: no-cache                                             |
+| Refresh                  | 服务端要求客户端多长时间刷新一次                             | Refresh: 5; url=http://www.hao123.com/archives/test.html |
+| User-Agent               | 客户端的版本                                                 | User-Agent: Mozilla/5.0 (Linux; X11)                         |
+| UA-Pixels                | 屏幕大小                                                     |                                                              |
+| UA-Color                 | 颜色深度                                                     |                                                              |
+| UA-OS                    | 操作系统类型                                                 |                                                              |
+| UA-CPU                   | CPU类型                                                      |                                                              |
+| Accept-Ranges            | 可以请求网页实体的一个或者多个子范围字段                     | Accept-Ranges: bytes                                         |
+| Cache-Control            | 指定请求和响应遵循的缓存机制                                 | Cache-Control: no-cache                                      |
+| Content-Type             | 请求的与实体对应的MIME信息                                   | Content-Type: application/x-www-form-urlencoded              |
+| Range                    | 客户端只请求实体的一部分，指定范围                           | Range: bytes=500-999                                         |
+| Date                     | 客户端当前请求服务器的时间                                   | Date: Tue, 15 Nov 2010 08:12:31 GMT                          |
+| If-Match                 | 只有请求内容与实体相匹配才有效                               | If-Match: “737060cd8c284d8af7ad3082f209582d”                 |
+| If-None-Match            | 如果内容未改变返回304代码，参数为服务器先前发送的Etag，与服务器回应的Etag比较判断是否改变 | If-None-Match: “737060cd8c284d8af7ad3082f209582d”            |
+| If-Range                 | 如果实体未改变，服务器发送客户端丢失的部分，否则发送整个实体。参数也为Etag | If-Range: “737060cd8c284d8af7ad3082f209582d”                 |
+| If-Unmodified-Since       | 只在实体在指定时间之后未被修改才请求成功                     | If-Unmodified-Since: Sat, 29 Oct 2010 19:43:31 GMT           |
+| Max-Forwards             | 限制信息通过代理和网关传送的时间                             | Max-Forwards: 10                                             |
+| Proxy-Authorization      | 连接到代理的授权证书                                         | Proxy-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==      |
+| TE                       | 客户端愿意接受的传输编码，并通知服务器接受接受尾加头信息     | TE: trailers,deflate;q=0.5                                   |
+| Upgrade                  | 向服务器指定某种传输协议以便服务器进行转换（如果支持）       | Upgrade: HTTP/2.0, SHTTP/1.3, IRC/6.9, RTA/x11               |
+| Via                      | 通知中间网关或代理服务器地址，通信协议                       | Via: 1.0 fred, 1.1 nowhere.com (Apache/1.1)                  |
+| Warning                  | 关于消息实体的警告信息                                       | Warn: 199 Miscellaneous warning                              |
 
 
 ### 三次握手和四次挥手
@@ -110,10 +110,9 @@ HTTP请求报文由3部分组成：请求行+请求头+请求体
 
 ![tcp-request](http://md.laragh.top/vuepress/network/tcp-request.png)
 
-### Swoole 应用于什么场景
+### TCP 为什么需要三次握手
 
-> Swoole 是 PHP 的一个扩展，Swoole 可以广泛应用于互联网、移动通信、企业软件、云计算、网络游戏、物联网（IOT）、车联网、智能家居等领域
-
+这个问题的本质是, 信道不可靠, 但是通信双发需要就某个问题达成一致. 而要解决这个问题, 无论你在消息中包含什么信息, 三次通信是理论上的最小值. 所以三次握手不是 TCP 本身的要求, 而是为了满足 "在不可靠信道上可靠地传输信息" 这一需求所导致的. 请注意这里的本质需求, 信道不可靠, 数据传输要可靠. 三次达到了, 那后面你想接着握手也好, 发数据也好, 跟进行可靠信息传输的需求就没关系了. 因此, 如果信道是可靠的, 即无论什么时候发出消息, 对方一定能收到, 或者你不关心是否要保证对方收到你的消息, 那就能像 UDP 那样直接发送消息就可以了.
 
 ### TCP 和 UDP 的区别？TCP 数据传输过程中怎么做到可靠的？
 
