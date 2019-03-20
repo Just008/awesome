@@ -16,6 +16,14 @@
 
 `lsof -i:80` 和 `netstat -anp | grep 80`
 
+### 查出访问最多的 10 个 IP
+
+参考链接：[Linux 分析日志获取最多访问的前 10 个 IP](https://blog.csdn.net/tanga842428/article/details/52856413)
+
+```bash
+cat access.log | awk  '{print $1}' | sort | uniq -c | sort -n -r | head -10
+```
+
 ## 系统设计相关
 
 ### 秒杀系统
