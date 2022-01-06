@@ -1,6 +1,5 @@
 const sidebarMap = [
   { title: "指南", dirname: "guide" },
-  { title: "ES6 学习", dirname: "web/es6" },
   { title: "Vue 学习", dirname: "web/vue" },
   { title: "Vue.js 实战", dirname: "web/vue-book" },
   { title: "Typescript 总结", dirname: "web/typescript" },
@@ -14,7 +13,7 @@ const sidebarMap = [
   { title: "Docker 学习", dirname: "linux/docker" },
   { title: "Linux 学习总结", dirname: "linux" },
   { title: "面试宝典", dirname: "backend/interview" },
-  { title: "其他", dirname: "other" },
+  { title: "LeetCode", dirname: "leetcode" },
 ]
 
 

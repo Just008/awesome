@@ -59,6 +59,17 @@ mysql> explain select * from users where name like 'back%';
 1 row in set, 1 warning (0.00 sec)
 ```
 
+1. **id** 列：是 select 语句的序号，MySQL将 `select` 查询分为简单查询和复杂查询。
+2. **select_type** 列：表示对应行是是简单还是复杂的查询。
+3. **table** 列：表示 `explain` 的一行正在访问哪个表。
+4. **type** 列：最重要的列之一。表示关联类型或访问类型，即 MySQL 决定如何查找表中的行。从最优到最差分别为：`system > const > eq_ref > ref > fulltext > ref_or_null > index_merge > unique_subquery > index_subquery > range > index > ALL`
+5. **possible_keys** 列：显示查询可能使用哪些索引来查找。
+6. **key** 列：这一列显示 mysql 实际采用哪个索引来优化对该表的访问。
+7. **key_len** 列：显示了mysql在索引里使用的字节数，通过这个值可以算出具体使用了索引中的哪些列。
+8. **ref** 列：这一列显示了在key列记录的索引中，表查找值所用到的列或常量，常见的有：const（常量），func，NULL，字段名。
+9. **rows** 列：这一列是 mysql 估计要读取并检测的行数，注意这个不是结果集里的行数。
+10. **Extra** 列：显示额外信息。比如有 `Using index`、`Using where`、`Using temporary`等。
+
 ### 索引隐式转换
 
 当你在数据库查询时，如果该字段为 varchar 类型，你执行了搜索

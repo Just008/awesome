@@ -4,7 +4,6 @@ const web = {
     {
       text: '基础',
       items: [
-        { text: 'ES6', link: '/web/es6/' },
         { text: 'Vue', link: '/web/vue/' },
         { text: 'Vue Book', link: '/web/vue-book/' },
       ]
@@ -42,7 +41,7 @@ const backend = {
       items: [
         { text: 'Git', link: '/backend/other/git.html' },
         { text: 'Markdown', link: '/backend/other/markdown.html' },
-        { text: '面试宝典', link: '/backend/interview/' },
+        { text: '面试宝典', link: '/backend/interview/' }
       ]
     }
   ]
@@ -80,5 +79,5 @@ module.exports = [
   web,
   backend,
   linux,
-  { text: '其他', link: '/other/' }
+  { text: 'Leetcode', link: '/leetcode/' }
 ]
